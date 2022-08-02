@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values">
+    <pa_target_values action="DELETE">
+        <next_target>00000000</next_target>
+        <sys_class_name>pa_target_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 02:18:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b5e19b92f4d5510a90c2d5df699b670</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1000</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>pa_target_values_5b5e19b92f4d5510a90c2d5df699b670</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-02 02:18:40</sys_updated_on>
+        <target display_value="NeedIt: Active Weekly">1f5e15792f4d5510a90c2d5df699b669</target>
+        <target_at>20220725</target_at>
+        <target_name>NeedIt: Active Weekly</target_name>
+        <target_review>00000000</target_review>
+        <value>1000</value>
+    </pa_target_values>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>d083574adbeb9b408264f70fbf961924</instance_id>
+        <instance_name>dev67690</instance_name>
+        <name>pa_target_values_5b5e19b92f4d5510a90c2d5df699b670</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values"><pa_target_values action="INSERT_OR_UPDATE"><next_target>00000000</next_target><sys_class_name>pa_target_values</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-02 02:18:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b5e19b92f4d5510a90c2d5df699b670</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1000</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>pa_target_values_5b5e19b92f4d5510a90c2d5df699b670</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-02 02:18:40</sys_updated_on><target display_value="NeedIt: Active Weekly">1f5e15792f4d5510a90c2d5df699b669</target><target_at>20220725</target_at><target_name>NeedIt: Active Weekly</target_name><target_review>00000000</target_review><value>1000</value></pa_target_values></record_update>]]></payload>
+        <payload_hash>-789564139</payload_hash>
+        <record_name>1000</record_name>
+        <reverted_from/>
+        <source>03f9d5ac2f455110a90c2d5df699b6cb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 02:18:40</sys_created_on>
+        <sys_id>235e19b92f4d5510a90c2d5df699b676</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1825c591fd20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-02 02:18:40</sys_updated_on>
+        <type>Target value</type>
+        <update_guid>6b5e19b9494d55109e09250e2d293a75</update_guid>
+        <update_guid_history>6b5e19b9494d55109e09250e2d293a75:-789564139</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1,000">7cbe5db92f4d5510a90c2d5df699b6af</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-02 02:20:08</sys_created_on>
+        <sys_db_object display_value="" name="pa_target_values">pa_target_values</sys_db_object>
+        <sys_id>023f831bb220482690deb904a0dd9684</sys_id>
+        <sys_metadata>5b5e19b92f4d5510a90c2d5df699b670</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1000</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="7ca6d1e92f8d1510a90c2d5df699b620">1f5e15792f4d5510a90c2d5df699b669</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>pa_target_values_5b5e19b92f4d5510a90c2d5df699b670</sys_update_name>
+        <sys_update_version display_value="pa_target_values_5b5e19b92f4d5510a90c2d5df699b670">235e19b92f4d5510a90c2d5df699b676</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-02 02:20:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
