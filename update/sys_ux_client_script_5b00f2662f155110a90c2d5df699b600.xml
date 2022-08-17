@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Retire">1700b2662f155110a90c2d5df699b6db</macroponent>
+        <name>validate inputs and process</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+async function handler({api, event, helpers, imports}) {
+    var total_quantity = api.data.look_up_consumable_record.result.quantity.value;
+    var quantity = api.state.quantity;
+    var stockroom = api.state.stockroom;
+    var error_message;
+    if (!stockroom) {
+        error_message = await helpers.translate("Please select a stockroom");
+    } else if (isNaN(quantity)) {
+        error_message = await helpers.translate("Please enter a non-zero number for quantity");
+    } else if (quantity > total_quantity) {
+        error_message = await helpers.translate("Please enter a number less than or equal to the number in stock");
+    } else if (quantity < 1) {
+        error_message = await helpers.translate("Please enter a non-zero number for the quantity");
+    }
+    if (error_message) {
+        api.setState("errorMessage", error_message);
+    } else {
+        api.data.retire_consumable.execute({
+            quantity: api.state.quantity,
+            stockroom: api.state.stockroom,
+            substate: api.state.substate,
+            sysId: api.context.props.sysId
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-17 02:26:42</sys_created_on>
+        <sys_id>5b00f2662f155110a90c2d5df699b600</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>validate inputs and process</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_5b00f2662f155110a90c2d5df699b600</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-17 02:26:42</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
